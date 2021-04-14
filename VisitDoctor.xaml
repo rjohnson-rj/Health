@@ -1,0 +1,57 @@
+﻿<Page x:Class="FINAL_PROJECT_14_06.VisitDoctor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FINAL_PROJECT_14_06"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="VisitDoctor">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="15"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="15"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock  Text="                                 Appointment Form" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" />
+
+        <TextBlock Text="Patient Name       :" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left"  />
+        <TextBlock Name="ShowPatient" Grid.Column="3 " Grid.Row="2" Grid.ColumnSpan="2" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+        <TextBlock Text="Doctor Name       :" Grid.Column="2" Grid.Row="3"  Grid.ColumnSpan="2" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left"  />
+        <TextBlock Name="ShowDoctor" Grid.Column="3 " Grid.Row="3" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" />
+
+        <TextBlock  Text="________________" Grid.Column="2" Grid.Row="1"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Grid.ColumnSpan="2" Margin="103,52,55,41" />
+
+        <TextBlock Text="      Prescriptions " Height="50" Grid.ColumnSpan="2" Grid.Column="3" Grid.Row="4" FontSize="16" VerticalAlignment="Bottom" FontWeight="Bold"  />
+
+        <TextBlock Text="Medication        :" Grid.Column="2" Grid.Row="5"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left"  />
+        <ComboBox Name="MedicineCombo" Grid.Column="3" Grid.Row="5"  FontSize="16" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="206" Height="53"/>
+
+        <TextBlock Text="Refills                 :" Grid.Column="2" Grid.Row="6"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left"  />
+        <TextBox Name="RefillCount"  Grid.Column="3" Grid.Row="6" FontSize="16" VerticalAlignment="Center"  Margin="0,9,4,9"  />
+        <Button Name="refillInfo" Grid.Column="4" Grid.Row="6" Content="?" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Left" Click="refillInfo_Click" RenderTransformOrigin="-1.63,0.584" Margin="0,10,0,7"/>
+
+        <Button Name="RequestPrescriptionBtn" Grid.Column="3" Grid.Row="7" Grid.ColumnSpan="3" Content="Request Prescription  " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Width="190" Height="30" Click="RequestPrescriptionBtn_Click" />
+        <Button Name="CompleteAppoinmentBtn" Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="4" Content="    Complete Appoinment  " FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" Width="280" Height="35"  Foreground="Green" Click="CompleteAppoinmentBtn_Click" Margin="102,10,0,15"/>
+
+    </Grid>
+</Page>
