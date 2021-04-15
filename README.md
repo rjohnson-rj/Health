@@ -10,3 +10,6 @@ Over-the-counter medications can be purchased freely, but prescription medicatio
 purchased with the help of a pharmacist and with an appropriate prescription. Prescription refills are
 kept track of on every prescription of every patient, and prescriptions can no longer be used once once
 their refills reach 0.
+
+
+![Healthcare_Manager](https://user-images.githubusercontent.com/69053630/114809716-b39d5100-9d78-11eb-9b90-b0a469d32248.gif)
