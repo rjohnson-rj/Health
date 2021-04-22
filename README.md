@@ -1,4 +1,4 @@
-HEALTHCARE SIMULATOR
+<b>HEALTHCARE SIMULATOR</b>
 
 Healthcare simulator is a WPF App (.NET Framework) for simulating a healthcare system. This includes a database
 of patient files, a list of doctors, a list of pharmacists, and a list of available medications (over-the
